@@ -35,8 +35,8 @@ const API_KEY = "49cc8c821cd2aff9af04c9f98c36eb74";
 setInterval(() => {
   const time = new Date();
   const month = time.getMonth();
-  const date = time.getDate();
   const day = time.getDay();
+  const date = time.getDate();
   const hour = time.getHours();
   const hoursIn12HrFormat = hour >= 13 ? hour % 12 : hour;
   const minute = time.getMinutes();
@@ -70,8 +70,6 @@ function showWeatherData(data) {
 
     timeZone.innerHTML = data.timezone;
     countryEl.innerHTML = data.lat+'N  '  + data.lon+'E'
-
-
 
   currentWeatherItemsEl.innerHTML =`<div class="weather-item">
     <div>Humidity</div>
